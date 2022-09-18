@@ -1,6 +1,6 @@
 {
   "name": "hashtag-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get an array of hashtags extracted from a string",
   "main": "index.js",
   "type": "module",
@@ -11,6 +11,10 @@
     "string",
     "hashtag parser",
     "hashtag extract"
+  ],
+  "files": [
+    "index.js",
+    "package.json"
   ],
   "repository": {
     "type": "git",
