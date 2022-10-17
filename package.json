@@ -1,6 +1,6 @@
 {
   "name": "hashtag-parser",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Get an array of hashtags extracted from a string",
   "main": "index.js",
   "type": "module",
@@ -13,14 +13,13 @@
     "hashtag extract"
   ],
   "files": [
-    "index.js",
-    "package.json"
+    "index.js"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rajdeep-ghosh/hashtag-parser.git"
   },
-  "author": "Rajdeep Ghosh",
+  "author": "Rajdeep Ghosh <rajdeepghosh810@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rajdeep-ghosh/hashtag-parser/issues"

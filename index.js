@@ -7,7 +7,7 @@ function extract(string, options = {}) {
   let hashtags = [];
 
   if (!string || typeof string !== "string") {
-    return hashtags;
+    throw new Error("Invalid string");
   }
 
   !caseSensitive && (string = string.toLowerCase());
