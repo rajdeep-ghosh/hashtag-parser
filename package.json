@@ -1,9 +1,15 @@
 {
   "name": "hashtag-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get an array of hashtags extracted from a string",
-  "main": "index.js",
-  "type": "module",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --no-sourcemap",
+    "dev": "rm -rf dist && microbundle watch --no-sourcemap"
+  },
   "keywords": [
     "hashtag",
     "parser",
@@ -13,17 +19,19 @@
     "hashtag extract"
   ],
   "files": [
-    "index.js",
-    "package.json"
+    "dist/**/*"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rajdeep-ghosh/hashtag-parser.git"
   },
-  "author": "Rajdeep Ghosh",
+  "author": "Rajdeep Ghosh <rajdeepghosh810@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rajdeep-ghosh/hashtag-parser/issues"
   },
-  "homepage": "https://github.com/rajdeep-ghosh/hashtag-parser#readme"
+  "homepage": "https://github.com/rajdeep-ghosh/hashtag-parser#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
 }
