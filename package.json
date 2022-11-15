@@ -2,8 +2,14 @@
   "name": "hashtag-parser",
   "version": "1.0.4",
   "description": "Get an array of hashtags extracted from a string",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "type": "module",
+  "scripts": {
+    "dev": "rm -rf ./lib && tsc -w",
+    "build": "rm -rf ./lib && tsc",
+    "prepare": "npm run build"
+  },
   "keywords": [
     "hashtag",
     "parser",
@@ -12,9 +18,7 @@
     "hashtag parser",
     "hashtag extract"
   ],
-  "files": [
-    "index.js"
-  ],
+  "files": ["lib/**/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rajdeep-ghosh/hashtag-parser.git"
@@ -24,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/rajdeep-ghosh/hashtag-parser/issues"
   },
-  "homepage": "https://github.com/rajdeep-ghosh/hashtag-parser#readme"
+  "homepage": "https://github.com/rajdeep-ghosh/hashtag-parser#readme",
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
 }
